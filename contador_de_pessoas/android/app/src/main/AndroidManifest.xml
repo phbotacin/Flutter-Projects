@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="botacin.com.primeiro_projeto">
+    package="botacin.com.contador_de_pessoas">
    <application
-        android:label="primeiro_projeto"
+        android:label="contador_de_pessoas"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

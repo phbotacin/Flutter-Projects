@@ -1,4 +1,4 @@
-package botacin.com.primeiro_projeto
+package botacin.com.contador_de_pessoas
 
 import io.flutter.embedding.android.FlutterActivity
 

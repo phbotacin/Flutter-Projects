@@ -1,6 +1,6 @@
-# primeiro_projeto
+# contador_de_pessoas
 
-Meu primeiro projeto de teste
+A new Flutter application.
 
 ## Getting Started
 
