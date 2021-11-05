@@ -32,12 +32,15 @@ class _HomeState extends State<Home> {
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
               Expanded(
+                  child: Padding(
+                padding: EdgeInsets.all(5),
                 child: TextField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     fillColor: Colors.white,
                     filled: true,
                     labelText: 'CEP',
+                    labelStyle: TextStyle(color: Colors.blue),
                     prefixIcon: Icon(
                       Icons.add_location,
                       color: Colors.blue,
@@ -53,7 +56,7 @@ class _HomeState extends State<Home> {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.blue, fontSize: 15.0),
                 ),
-              ),
+              )),
               TextButton(
                 style: TextButton.styleFrom(backgroundColor: Colors.blue),
                 onPressed: () {},
@@ -63,117 +66,138 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ]),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "Logradouro",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "Logradouro",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "Bairro",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "Bairro",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "Localidade",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "Localidade",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "UF",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "UF",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "IBGE",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "IBGE",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "DDD",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "DDD",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: "SIAFI",
-                labelStyle: TextStyle(color: Colors.blue),
-                contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-                border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                focusedBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                disabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0))),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  labelText: "SIAFI",
+                  labelStyle: TextStyle(color: Colors.blue),
+                  contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+                  border: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  focusedBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                  disabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue, fontSize: 15.0),
               ),
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 15.0),
             ),
             Padding(
               padding: EdgeInsets.only(top: 15.0),
